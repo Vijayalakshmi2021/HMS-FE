@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import "./signInUp.css"
+import "./SignInUp.css"
 import Signin from "./Subfiles/Signin"
 import Signup from "./Subfiles/Signup"
 import Admin from "./Subfiles/Admin"
