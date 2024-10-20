@@ -1,7 +1,10 @@
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
-import "../signInUp.css";
+import "../SignInUp.css";
 
 function Signin({ setSignin, setLoginState }) {
     const [email, setEmail] = useState("");
