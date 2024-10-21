@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import ReactApexChart from "react-apexcharts";
@@ -30,14 +31,14 @@ function StatisticsTab() {
     const fetchData = async () => {
         try {
             const endpoints = [
-                "http://localhost:5000/api/accommodation",
-                "http://localhost:5000/api/inquiries",
-                "http://localhost:5000/api/cleaning",
-                "http://localhost:5000/api/medical",
-                "http://localhost:5000/api/clearance",
-                "http://localhost:5000/api/mentoring",
-                "http://localhost:5000/api/leave",
-                "http://localhost:5000/api/user/getAllUsers",
+                "https://capstone-be-g5sw.onrender.com/api/accommodation",
+                "https://capstone-be-g5sw.onrender.com/api/inquiries",
+                "https://capstone-be-g5sw.onrender.com/api/cleaning",
+                "https://capstone-be-g5sw.onrender.com/api/medical",
+                "https://capstone-be-g5sw.onrender.com/api/clearance",
+                "https://capstone-be-g5sw.onrender.com/api/mentoring",
+                "https://capstone-be-g5sw.onrender.com/api/leave",
+                "https://capstone-be-g5sw.onrender.com/api/user/getAllUsers",
             ];
 
             const counts = await Promise.all(

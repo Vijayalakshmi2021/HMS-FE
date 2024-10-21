@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./AttendeeTable.css";
@@ -14,7 +15,7 @@ function MentoringTable() {
     useEffect(() => {
         // Fetch data from the API endpoint
         axios
-            .get("http://localhost:5000/api/mentoring")
+            .get("https://capstone-be-g5sw.onrender.com/api/mentoring")
             .then((response) => {
                 setMentoringRequests(response.data);
             })
@@ -26,7 +27,7 @@ function MentoringTable() {
     const handleStatusChange = async (id, newStatus) => {
         try {
             // Update the status of the mentoring request in the backend
-            await axios.patch(`http://localhost:5000/api/mentoring/${id}/status`, {
+            await axios.patch(`https://capstone-be-g5sw.onrender.com/mentoring/${id}/status`, {
                 status: newStatus,
             });
 
