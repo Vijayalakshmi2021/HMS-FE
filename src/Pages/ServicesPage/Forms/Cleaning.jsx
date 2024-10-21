@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
@@ -43,7 +44,7 @@ function Cleaning() {
         e.preventDefault();
         try {
             const response = await axios.post(
-                "http://localhost:5000/api/cleaning",
+                "https://capstone-be-g5sw.onrender.com/cleaning",
                 formData
             );
 

@@ -36,7 +36,7 @@ const Footer = () => {
                 </div>
                 <div className="Footer-contact">
                     <address>
-                        Dasatha Ediringhe
+                        Cambridge
                         <br />
                         No 12/3 Funny Road,
                         <br />

@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import "./servicesCard.css"
 
 function ServicesCard({ imgSrc, service, details, link }) {

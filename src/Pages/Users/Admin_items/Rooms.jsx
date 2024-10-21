@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
 import { MongoClient } from "mongodb";
 
@@ -8,7 +9,7 @@ const Room = () => {
         const fetchData = async () => {
             try {
                 const uri =
-                    "mongodb+srv://cs50tharindu:CXE0jvEDEdfppIHE@cluster0.g3vaocn.mongodb.net/Buildings?retryWrites=true&w=majority";
+                    "mongodb+srv://sviji1792:lM4keaL9EBwJ291a@cluster0.lxktg.mongodb.net/Hostel_Management?retryWrites=true&w=majority&appName=Cluster0";
                 const client = new MongoClient(uri);
                 await client.connect();
                 const db = client.db("Buildings");

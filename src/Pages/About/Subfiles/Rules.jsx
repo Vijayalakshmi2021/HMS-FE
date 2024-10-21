@@ -1,3 +1,4 @@
+/* eslint-disable no-irregular-whitespace */
 const Rules = () => {
     return (
         <div className="sections rules">

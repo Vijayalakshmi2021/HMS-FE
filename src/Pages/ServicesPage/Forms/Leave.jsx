@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
@@ -22,7 +23,7 @@ function Leave() {
         e.preventDefault();
         try {
             const response = await axios.post(
-                "http://localhost:5000/api/leave",
+                "https://capstone-be-g5sw.onrender.com/api/leave",
                 formData
             );
 

@@ -13,7 +13,7 @@ function Signin({ setSignin, setLoginState }) {
 
     function signInUser(e) {
         e.preventDefault();
-        fetch("http://localhost:5000/api/user/signin", {
+        fetch("https://capstone-be-g5sw.onrender.com/api/user/signin", {
             method: "post",
             headers: {
                 "Content-Type": "application/json",

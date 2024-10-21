@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
@@ -15,12 +16,10 @@ function Signup({ setSignin }) {
     const navigate = useNavigate();
 
     async function signUpUser(e) {
-        e.preventDefault();
-
-        if (password === conPassword) {
+        e.preventDefault(); if (password === conPassword) {
             try {
                 const response = await axios.post(
-                    "http://localhost:5000/api/user/signup",
+                    "https://capstone-be-g5sw.onrender.com/api/user/signup",
                     {
                         name,
                         email,

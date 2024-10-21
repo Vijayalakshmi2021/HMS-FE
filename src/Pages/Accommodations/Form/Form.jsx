@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import axios from "axios";
 import Swal from "sweetalert2";
@@ -72,7 +73,7 @@ function Form() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.post("http://localhost:5000/api/accommodation", formData);
+            await axios.post("https://capstone-be-g5sw.onrender.com/api/accommodation", formData);
 
             Swal.fire({
                 icon: "success",

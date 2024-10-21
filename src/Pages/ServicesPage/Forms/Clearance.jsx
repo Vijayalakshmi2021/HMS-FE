@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
@@ -34,7 +35,7 @@ function Clearance() {
     const handleSubmit = (e) => {
         e.preventDefault();
         axios
-            .post("http://localhost:5000/api/clearance", formData)
+            .post("https://capstone-be-g5sw.onrender.com/api/clearance", formData)
             .then((response) => {
                 // Handle success
                 console.log(response.data); // Log the response for debugging
@@ -142,7 +143,6 @@ function Clearance() {
                         checked={formData.chair}
                         onChange={handleChange}
                     />
-
                     <label htmlFor="table">Table</label>
                     <input
                         type="checkbox"
